@@ -740,13 +740,14 @@ color: #b59f5b;
   background-image: url(../svg/form-x.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: red;
+  background-color: green;
   background-size: 16px;
   position: absolute;
-  top:  0;
+  top:  -15px;
   right: 0;
-  font-size: 20px;
-}
+ }
+
+
 
 
 
@@ -796,13 +797,13 @@ color: #b59f5b;
   background-image: url(../svg/001-pinterest.svg);
 }
 
-.social-icon-facebook{
+/*.social-icon-facebook{
   background-image: url(../svg/002-facebook-logo.svg);
 }
 
 .social-icon-instagram{
   background-image: url(../svg/005-instagram.svg);
-}
+}*/
 
 .social-icon-tumblr{
   background-image: url(../svg/003-tumblr.svg);
