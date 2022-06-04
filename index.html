@@ -42,7 +42,7 @@
             <li class="tag-item"><a href="#0">lifestyle</a></li>
             <li class="tag-item"><a href="#0">interior</a></li>
           </ul>
-          <div class="trend-text">Сейчас в тренде: сад на подоконнике</div>
+          <h3 class="trend-text"><a href="#0">Сейчас в тренде: сад на подоконнике</a></h3>
         </div>
       </article>
 
@@ -51,7 +51,7 @@
           <ul class="trend-tags">
            <li class="tag-item"><a href="#0">food</a></li>
           </ul>
-          <div class="trend-text">Сыры на красивых картинках из интернета: какие они на вкус?</div>
+          <h3 class="trend-text"><a href="#0">Сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
         </div>
       </article>
 
@@ -61,7 +61,7 @@
             <li class="tag-item"><a href="#0">lifestyle</a></li>
             <li class="tag-item"><a href="#0">travel</a></li>
           </ul>
-          <div class="trend-text">Собираемся в первый поход в горы</div>
+          <h3 class="trend-text"><a href="#0">Собираемся в первый поход в горы</a></h3>
         </div>
       </article>
 
@@ -71,7 +71,7 @@
             <li class="tag-item"><a href="#0">food</a></li>
             <li class="tag-item"><a href="#0">health</a></li>
           </ul>
-          <div class="trend-text">Сейчас в тренде: сколько витамина С в лимонах?</div>
+          <h3 class="trend-text"><a href="#0">Сейчас в тренде: сколько витамина С в лимонах?</a></h3>
         </div>
       </article>  
 
@@ -296,7 +296,15 @@
       <div class="product_cards">
         <article class="product">
          <div class="product_imgbox">
-            <img class="product_img" src="images/shop-item-desk1.jpg" alt="Подушки на диван">
+            <picture class="product_preview">
+              <source 
+                media="(max-width: 640px)"
+                srcset="images/shop-item-mobile1.jpg">
+              <source 
+                media="(min-width: 641px) and (max-width: 1199px)"
+                srcset="images/shop-item-tablet1.jpg"> 
+              <img class="product_img" src="images/shop-item-desk1.jpg" alt="Подушки на диван">
+              </picture>
           </div> 
           <div class="product_body">
         <div class="product_content">
@@ -320,7 +328,14 @@
 
      <article class="product">
          <div class="product_imgbox">
-            <img class="product_img" src="images/shop-item-desk2.jpg" alt="Кукла">
+            <picture class="product_preview">
+              <source 
+                media="(max-width: 640px)"
+                srcset="images/shop-item-mobile2.jpg">
+              <source 
+                media="(min-width: 641px) and (max-width: 1199px)"
+                srcset="images/shop-item-tablet2.jpg"> 
+              <img class="product_img" src="images/shop-item-desk2.jpg" alt="Кукла"></picture>
           </div> 
           <div class="product_body">
         <div class="product_content">
@@ -345,7 +360,16 @@
 
      <article class="product">
          <div class="product_imgbox">
-            <img class="product_img" src="images/shop-item-desk3.jpg" alt="Рамка">
+          <picture class="product_preview">
+      <source 
+              media="(max-width: 640px)"
+              srcset="images/shop-item-mobile3.jpg">
+      <source 
+              media="(min-width: 641px) and (max-width: 1199px)"
+              srcset="images/shop-item-tablet3.jpg"> 
+      <img class="product_img" src="images/shop-item-desk3.jpg" alt="Рамка">
+    </picture>
+            
           </div> 
           <div class="product_body">
         <div class="product_content">
@@ -403,9 +427,13 @@
 
 <div class="popup hidden">
     <div class="popup_container">
+
+      <a class="popup_сlose" href="#0"><span class="hidden">Закрыть окно</span></a>
+
     <div class="feedback">
 
     
+
     <h2 class="popup_title">Ваш фидбек</h2>
 
     <form class="feedback_form">
@@ -443,7 +471,7 @@
   </form>
 
 
-  <button class="popup_сlose">Закрыть окно</button>
+  
   
 </div>
   </div> 
