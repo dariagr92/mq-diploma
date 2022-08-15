@@ -28,9 +28,6 @@
 }
 
 
-
-
-
 .header { 
       padding-top: 29px;
       background-color: #000000;
@@ -53,6 +50,7 @@
     opacity: 0.6;
     z-index: 1;
 }
+
 
 .header-title, .logo-menu, .logo-img, .menu-list{
    color: #ffffff;
@@ -77,6 +75,8 @@
    padding-top: 8px;
    color: #ffffff;
   }
+
+ 
 
 a{
   text-decoration: none;
@@ -177,6 +177,7 @@ li{
   padding:  30px 10px 30px 30px;
   margin:  0px 20px 15px 20px;
 }
+
 
 .trend-garden{
   background-image: url(../images/trend1.jpg);
@@ -501,8 +502,8 @@ text-transform: uppercase;
 /*===========PRODUCTS===========*/
 .product_section{
   padding: 0 15px;
-
 }
+
 
 .product_body{
   width: 85.5%;
@@ -511,8 +512,8 @@ text-transform: uppercase;
   outline: 3px solid #b59f5b;
   outline-offset: 25px;
   flex-grow: 1;
-
 }
+
 
 .products_title{
   text-align: center;
@@ -521,6 +522,7 @@ text-transform: uppercase;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 
 .products_title::after{
   content:"";
@@ -535,11 +537,11 @@ text-transform: uppercase;
   background-color: #b59f5b;
 }
 
+
 .product_cards{
   display: flex;
   justify-content: space-between;
   margin-bottom: 65px;
-
 }
 
 
@@ -548,18 +550,19 @@ text-transform: uppercase;
   flex-direction: column;
   justify-content: flex-start;
   width: calc((100% - 130px)/3);
-  box-sizing: border-box;
-
-   
+  box-sizing: border-box; 
 }
 
 
 .product_imgbox{
-  width: 85.5%;
+  max-width: 85.5%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.product_img{
+  width: 100%;
+}
 
 .product_title{
   margin-top: 24px;
@@ -570,22 +573,26 @@ text-transform: uppercase;
   text-transform: uppercase;
 }
 
-.product_description{
+.product_content{
   width: 85.5%;
+}
+
+
+.product_description{
   margin-top: 13px;
   margin-bottom: 13px;
-
-
   font-size: 15px;
   line-height: 22px;
   color: #0f0d0e;
   font-weight: 400;
 }
 
+
 .product_footer{
   display: flex;
   justify-content: space-between;
 }
+
 
 .product_prices{
   display: flex;
@@ -596,11 +603,13 @@ text-transform: uppercase;
   font-weight: 700;
 }
 
+
 .product_price_old{
   font-size: 14px;
   line-height: 24px;
   text-decoration: line-through;
 }
+
 
 .product_button{
   background-color: #b59f5b;
@@ -694,10 +703,9 @@ text-transform: uppercase;
 
 
 .popup_container{
-  position: fixed;
+  position: absolute;
   left: calc(50% - 195px);
   top: 10vh;
-  
   }
 
   .feedback{
@@ -871,9 +879,44 @@ color: #b59f5b;
       margin-top: 35px;
  } 
 
+
  .menu{
+  position: fixed;
+  right: 15px;
+  top: 30px;
+ }
+
+ .menu-list{
   display: none;
  }
+
+ .menu__button{
+    width: 25px;
+    height: 45px;
+    position: relative;
+    z-index: 10;
+    
+ }
+
+ .burger-lines::before{
+  content: '';
+  top: -12px;
+ }
+
+ .burger-lines::after{
+  content: '';
+  top: 12px;
+ }
+
+.burger-lines, .burger-lines::before, .burger-lines::after{
+  position: absolute;
+  background-color: #ffffff;
+  height: 3px;
+  width: 100%;
+  left: 0;
+
+}
+ 
 
  .logo-menu{
   justify-content: center;
@@ -984,11 +1027,24 @@ font-size: 16px;
 
 .product_description{
   width: 100%;
+}
+
+.popup_container{
+  left: 0;
+  top: 5vh;
+  margin-right: 4.1%;
+  margin-left: 4.1%;
 
 }
 
 .feedback{
-   width: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+
+.feedback_form{
+
+  width: 84%;
 }
 
 .popup_title{
@@ -1010,6 +1066,8 @@ font-size: 16px;
 .trend{
   width: calc((100% - 15px)/4);
 }
+
+ 
 }
 
 @media (min-width: 641px) and (max-width: 1199px){
@@ -1017,10 +1075,36 @@ font-size: 16px;
     background-image: url(../images/banner-bg-tablet.jpg);
 }
 
-.menu{
+.menu-list{
   display: none;
  }
 
+.menu__button{
+    width: 25px;
+    height: 45px;
+    position: relative;
+    z-index: 10;
+    
+ }
+
+ .burger-lines::before{
+  content: '';
+  top: -12px;
+ }
+
+ .burger-lines::after{
+  content: '';
+  top: 12px;
+ }
+
+.burger-lines, .burger-lines::before, .burger-lines::after{
+  position: absolute;
+  background-color: #ffffff;
+  height: 3px;
+  width: 100%;
+  left: 0;
+
+}
  
 
 .main{
@@ -1055,23 +1139,18 @@ font-size: 16px;
  }
 
 
-.product_description{
-  width: 100%;
-}
-
-.product_body{
-  width: 100%;
-  
-}
-
 .product_imgbox{
   width: 100%;
   text-align: center;
 }
 
-.product_preview{
+.product_img{
   width: 100%;
- }
+}
+
+.product_content{
+  width: 100%;
+}
 
 
 
