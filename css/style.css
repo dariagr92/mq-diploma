@@ -822,16 +822,21 @@ color: #b59f5b;
 }
 
 .popup_close{
+  border: none;
+  color: transparent;
   text-decoration: none;
   background-image: url(../svg/form-x.svg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-color: green;
-  background-size: 16px;
+
+  background-color: transparent;
+  background-position: right;
+  background-size: 20px 20px;
   position: absolute;
-  top:  -15px;
+  top:  -20px;
   right: 0;
  }
+
+
 
 @media (max-width: 640px) and (orientation: landscape){
   .trend{
@@ -1075,6 +1080,10 @@ font-size: 16px;
     background-image: url(../images/banner-bg-tablet.jpg);
 }
 
+.page-content{
+  padding: 0 35px;
+}
+
 .menu-list{
   display: none;
  }
@@ -1150,6 +1159,10 @@ font-size: 16px;
 
 .product_content{
   width: 100%;
+}
+
+.footer-content{
+  padding: 0 35px;
 }
 
 
